@@ -71,8 +71,9 @@ class Blockchain {
 
 //test blockchain
 let memeCoin = new Blockchain();
-memeCoin.addBlock(new Block(1, "24/08/2021", {amount: 100 })); //add values to 2nd block
+memeCoin.addBlock(new Block(1, "24/08/2021", {amount: 100})); //add values to 2nd block
 memeCoin.addBlock(new Block(2, "24/08/2021", {amount: 200})); //add values to 3rd block
+memeCoin.addBlock(new Block(2, "06/01/2022", {amount: 400, name: "Wandile"})); //add values to 4th block
 
 console.log("is chain valid? " + memeCoin.isChainValid());
 console.log(JSON.stringify(memeCoin, null, 4)); // RUN>> $ node main.js
